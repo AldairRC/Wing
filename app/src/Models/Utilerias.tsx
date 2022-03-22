@@ -32,7 +32,7 @@ export interface Utilerias_Resultado_getImagen {
 ================================================================================================*/
 export default class Utilerias 
 {
-    static SERVIDOR = "http://wingmex.herokuapp.com/"   
+    static SERVIDOR = "https://wingmex.herokuapp.com/"   
     //"http://localhost:4000/"   // para lap
     //"http://192.168.8.17:4000/"  para cel
 
