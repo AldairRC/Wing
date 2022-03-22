@@ -7,7 +7,7 @@ server
 # CONFIGURACION DE NODEMON
 nodemon.json
 # CONFIGURACION DE TS
-tsconfig.json
+#tsconfig.json
 #CONFIGURACION DE VISUAL STUDIO CODE
 app/.vscode
 #INSTALACION DE MODULOS REACT JS
