@@ -1,0 +1,31 @@
+
+.MuiTooltip-tooltip {
+    margin: 8px !important;
+    background-color: var(--background-tooltip) !important;
+}
+
+.MuiTooltip-tooltip .MuiTooltip-arrow {
+    color: var(--background-tooltip) !important;
+}
+
+.MuiTooltip-tooltip .divContenido {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding: 14px 9px;
+}
+
+.MuiTooltip-tooltip .divContenido .titulo {
+    font-family: 'Signika-Bold' , 'Segoe UI';
+    font-size: 20px;
+    text-align: center;
+    color: var(--color_texto_amarillo);
+}
+
+.MuiTooltip-tooltip .divContenido .descripcion {
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 18px;
+    text-align: center;
+    color: var(--background_input);
+}

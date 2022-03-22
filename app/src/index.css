@@ -1,0 +1,80 @@
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  border: none;
+}
+
+@font-face {
+  font-family: "Signika-SemiBold";
+  src: url("../public/RECURSOS/Fuentes/Signika-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Signika-Bold";
+  src: url("../public/RECURSOS/Fuentes/Signika-Bold.ttf");
+}
+
+@font-face {
+  font-family: "GermaniaOne-Regular";
+  src: url("../public/RECURSOS/Fuentes/GermaniaOne-Regular.ttf");
+}
+
+
+/* VARIABLES */
+:root {
+  --background-encabezado: rgba(150, 203, 174, 1);
+  --background-fondo-principal: rgba(246, 242, 242, 1);
+  --background-fondo-tarjeta: rgb(209, 226, 210);
+  --background-verde1: rgba(88, 139, 109, 1);
+  --background_verde2: rgb(220, 236, 224);
+  --background_tituloCategoriaCombo: rgb(167, 194, 179);
+  --background_modal: rgb(18, 29, 22 , 0.97);
+  --background_modalHeader: rgba(93, 112, 91, 0.6);
+  --background_boton_azul: rgb(69, 132, 143);
+  --background_boton_rojo: rgba(139, 88, 88, 1);
+  --background_boton_rojo2:rgb(179, 50, 50);
+  --background_boton_rojo3:rgb(156, 35, 35);
+  --background_input: rgba(220, 232, 224, 1);
+  
+  --color-titulo: rgba(57, 91, 75, 1);
+  --color-item-imagen-seleccionado: rgb(120, 189, 113);
+  --color_texto_ligero_verde:  rgba(216, 244, 219, 1);
+  --color_texto_amarillo: rgb(236, 228, 148);
+  --color_texto_azul: rgba(93, 130, 164, 1);
+  --color_textoPredeterminado_azul: rgb(118, 132, 146);
+  --color_texto_input: rgba(57, 91, 75, 1);
+  --color_texto_grisOscuro: rgb(92, 90, 90);
+
+  --color_rojoLigero: rgb(236, 199, 199);
+  --color_rojoOscuro: rgb(80, 6, 6);
+
+  --color_azulLigero: rgb(184, 220, 226);
+  --color_azulOscuro: rgb(27, 72, 80);
+
+  --borde-colorVerde1: rgba(88, 139, 109, 1);
+  --borde_colorAzul1: rgb(55, 93, 129);
+  --background-tooltip: rgb(16, 37, 25);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-fondo-principal);
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+
+.contenedorPagina {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /*overflow: auto !important; */
+}

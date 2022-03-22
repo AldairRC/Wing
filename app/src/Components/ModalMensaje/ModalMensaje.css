@@ -1,0 +1,156 @@
+
+.modalMensaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalMensaje .MuiBackdrop-root {
+    background-color: var(--background_modal);
+}
+
+.modalMensaje .contenidoModal {
+    --modalMensaje_radioBorde: 8px;
+    --grosorBackgroundIcono: 30px;
+    --tamIcono: 50px;
+
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: none;
+    background-color: var(--background-fondo-principal);
+    border-radius: var(--modalMensaje_radioBorde);
+}
+
+/*==============================================
+                HEADER 
+================================================*/
+.modalMensaje .contenidoModal .divTipoMensaje {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 18px 9px 25px 9px;
+    overflow: visible;
+    position: relative;
+    border-radius: var(--modalMensaje_radioBorde) var(--modalMensaje_radioBorde) 75% 75%;
+}
+
+.modalMensaje .contenidoModal .divTipoMensaje_verde {
+    background-color: var(--background-verde1);
+}
+
+.modalMensaje .contenidoModal .divTipoMensaje_rojo {
+    background-color: var(--background_boton_rojo2);
+}
+
+.modalMensaje .contenidoModal .divTipoMensaje_azul {
+    background-color: var(--background_boton_azul);
+}
+
+
+
+/*======================================================
+                CONTENEDOR DEL ICONO
+========================================================*/
+.modalMensaje .contenidoModal .divIcono {
+    width: calc( var(--tamIcono) + var(--grosorBackgroundIcono) );
+    height: calc( var(--tamIcono) + var(--grosorBackgroundIcono) );
+    font-size: var(--tamIcono);
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    z-index: 10;
+}
+
+.modalMensaje .contenidoModal .divIcono_verde {
+    background-color: var(--color-titulo);
+    color: var(--color_texto_ligero_verde);
+}
+
+.modalMensaje .contenidoModal .divIcono_rojo {
+    background-color: var(--color_rojoOscuro);
+    color: var(--color_rojoLigero);
+}
+
+.modalMensaje .contenidoModal .divIcono_azul {
+    background-color: var(--color_azulOscuro);
+    color: var(--color_azulLigero);
+}
+
+
+
+/*===================================================
+                TITULO
+=====================================================*/
+.modalMensaje .contenidoModal .labelTitulo {
+    margin: 17px 12px 15px 12px;
+    font-family: 'Signika-Bold' , 'Segoe UI';
+    font-size: 24px;
+    text-align: center;
+}
+
+.modalMensaje .contenidoModal .labelTitulo_verde {
+    color: var(--color-titulo);
+}
+
+.modalMensaje .contenidoModal .labelTitulo_rojo {
+    color: var(--color_rojoOscuro);
+}
+
+.modalMensaje .contenidoModal .labelTitulo_azul {
+    color: var(--color_azulOscuro);
+}
+
+
+
+/*====================
+    DESCRIPCION
+======================*/
+.modalMensaje .contenidoModal .labelDescripcion {
+    margin: 0px 18px 23px 18px;
+    font-family: 'Signika-SemiBold' , 'Segoe UI';
+    font-size: 20px;
+    color: var(--color_texto_grisOscuro);
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+
+/*=========================
+    CONTENEDOR DE BOTONES
+===========================*/
+.modalMensaje .divBotones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0px 9px 12px 9px;
+}
+
+
+/*========================================
+        DISEÑO DE LOS BOTONES
+==========================================*/
+.modalMensaje .boton {
+    flex-grow: 2;
+    padding: 4px 8px;
+    font-family: 'Signika-SemiBold' , 'Segoe UI';
+    font-size: 18px;
+    border-radius: 6px;
+    text-transform: none;
+}
+
+.modalMensaje .botonVerde {
+    color: var(--color_texto_ligero_verde);
+    background-color: var(--background-verde1);
+}
+
+.modalMensaje .botonRojo {
+    color: var(--color_rojoLigero);
+    background-color: var(--background_boton_rojo3);
+}

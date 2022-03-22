@@ -1,0 +1,111 @@
+
+/*=============================================================
+                Titulo del Textfield
+===============================================================*/
+.TextField_E1 label {
+    font-family: 'GermaniaOne-Regular' , 'Segoe UI';
+    font-size: 20px !important;
+    color: var(--color_texto_azul) !important;
+    padding: 0px 5px !important;
+}
+
+.TextField_E1 label.Mui-error {
+    color: var(--color_rojoOscuro) !important;
+}
+
+
+/*===============================
+    CONTENEDOR DEL INPUT
+=================================*/
+.TextField_E1 .MuiOutlinedInput-root {
+    background-color: var(--background_input);
+    --bordeRadio: 8px;
+    border-radius: var(--bordeRadio);
+}
+
+.TextField_E1 .MuiOutlinedInput-root.Mui-error {
+    background-color: var(--color_rojoLigero);
+}
+
+
+/* INPUT */
+.TextField_E1 .MuiOutlinedInput-root input {
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 21px;
+    color: var(--color_texto_input);
+    height: fit-content;
+}
+
+.TextField_E1 .MuiOutlinedInput-root.Mui-error input {
+    color: var(--background-tooltip);
+}
+
+/* TEXTAREA */
+.TextField_E1 .MuiOutlinedInput-root.Mui-error textarea {
+    color: var(--background-tooltip);
+}
+
+
+/*========================================
+     INPUT TEXTO PREDETERMINADO 
+==========================================*/
+.TextField_E1 .MuiOutlinedInput-root input::-webkit-input-placeholder ,
+.TextField_E1 .MuiOutlinedInput-root textarea::-webkit-input-placeholder {
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 20px;
+    color: var(--color_textoPredeterminado_azul) !important;
+    opacity: 1 !important;
+}
+.TextField_E1 .MuiOutlinedInput-root input::placeholder ,
+.TextField_E1 .MuiOutlinedInput-root textarea::placeholder {
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 20px;
+    color: var(--color_textoPredeterminado_azul) !important;
+    opacity: 1 !important;
+}
+.TextField_E1 .MuiOutlinedInput-root input::-moz-placeholder ,
+.TextField_E1 .MuiOutlinedInput-root textarea::-moz-placeholder {
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 20px;
+    color: var(--color_textoPredeterminado_azul) !important;
+    opacity: 1 !important;
+}
+.TextField_E1 .MuiOutlinedInput-root input::-ms-placeholder ,
+.TextField_E1 .MuiOutlinedInput-root textarea::-ms-placeholder {
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 20px;
+    color: var(--color_textoPredeterminado_azul) !important;
+    opacity: 1 !important;
+}
+ 
+
+/*===============================
+    BORDE DEL CONTENEDOR PRINCIPAL
+=================================*/
+.TextField_E1 .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline ,
+.TextField_E1 .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-radius: var(--bordeRadio);
+    border: 2px solid var(--borde_colorAzul1);
+    font-size: 110%;
+}
+/* FOCUS */
+.TextField_E1 .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border: 3px solid var(--color-titulo);
+    font-size: 112%;
+}
+
+/* ERROR */
+.TextField_E1 .MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+    border: 3px solid var(--color_rojoOscuro);
+}
+
+
+/*===============================
+    AYUDA O DESCRIPCION DEL INPUT
+=================================*/
+.TextField_E1 .MuiFormHelperText-root {
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 16px !important;
+    color: var(--color-titulo) !important;
+    padding: 0px;
+}

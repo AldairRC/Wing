@@ -1,0 +1,25 @@
+
+.DivResultado {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    gap: 18px;
+    flex-grow: 2;
+}
+
+.DivResultado .icono {
+    font-size: 75px;
+    color: var(--color-titulo);
+}
+
+.DivResultado label {
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 22px;
+    color: var(--color-titulo);
+    text-align: center;
+}

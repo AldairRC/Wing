@@ -1,0 +1,59 @@
+
+.ComponenteDivPaginacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 10px 20px 10px;
+}
+
+.ComponenteDivPaginacion .iconoPaginacion {
+    font-size: 55px;
+    color: var(--color-titulo);
+    border-radius: 100%;
+    width: fit-content;
+    height: calc(fit-content - 20px);
+    padding: 0px 10px 0px 10px;
+}
+
+/*======================================================
+    CARRUSEL DE PAGINAS
+  ======================================================*/
+/* Swiper */
+.ComponenteDivPaginacion .carrusel {
+    flex-grow: 2;
+}
+
+/* SwiperSlide */
+.ComponenteDivPaginacion .carrusel .itemCarrusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100% !important;
+}
+
+/* Button pagina */
+.ComponenteDivPaginacion .carrusel .itemCarrusel .botonPagina {
+    width: 36px;
+    min-width: min-content;
+    height: 36px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var( --background-fondo-tarjeta );
+    font-family: "Signika-Semibold" , "Segoe UI";
+    font-size: 19px;
+    color: var(--color-titulo);
+    border: 2px solid var(--color-titulo);
+    border-radius: 100%;
+}
+
+/* Button pagina actual */
+.ComponenteDivPaginacion .carrusel .itemCarrusel .botonPagina.botonPaginaActual {
+    background-color: var( --color-titulo );
+    color: var( --background-fondo-tarjeta );
+    border: 3px solid var(--color-titulo);
+}

@@ -1,0 +1,97 @@
+/*===============================
+    DIMENSION DEL AUTOCOMPLETE
+=================================*/
+.InputTextoConSugerencia {
+    width: 100%;
+}
+
+.InputTextoConSugerencia .MuiAutocomplete-root {
+    width: 100%;
+}
+
+
+/*===============================
+    BOTON X DEL INPUT
+=================================*/
+.InputTextoConSugerencia .MuiAutocomplete-root .MuiAutocomplete-endAdornment {
+    --alturaIcono: 30px;
+    top: calc( 50% - var(--alturaIcono) / 3 * 2 );
+}
+
+.InputTextoConSugerencia .MuiAutocomplete-root .MuiAutocomplete-endAdornment button {
+    color: var(--color-titulo);
+    border: none;
+}
+
+.InputTextoConSugerencia .MuiAutocomplete-root .MuiAutocomplete-endAdornment button svg {
+    font-size: var(--alturaIcono);
+}
+
+
+/*===============================
+    DISEÑO DEL COMBO
+=================================*/
+
+/* CONTENEDOR DEL COMBO */
+.comboInputSugerencia {
+    border-radius: 0px 0px 10px 10px !important;
+    border-bottom: 2px solid var(--color-titulo);
+    border-left: 2px solid var(--color-titulo);
+    border-right: 2px solid var(--color-titulo);
+}
+
+/* Contenedor de la lista del combo */
+.comboInputSugerencia .MuiAutocomplete-listbox {
+    padding: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* TITULO DE LA CATEGORIA */
+.comboInputSugerencia .MuiAutocomplete-groupLabel {
+    font-family: 'Signika-Bold' , 'Segoe UI';
+    font-size: 19px;
+    color: var(--color-titulo);
+    background-color: var(--background_tituloCategoriaCombo);
+    line-height: 1;
+    padding: 9px 14px 9px 10px;
+}
+
+/* LABELS OPCIONES O SUGERENCIAS PARES */
+.comboInputSugerencia .MuiAutocomplete-groupUl li:nth-child(even) { 
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 18px;
+    background-color: var(--background_verde2);
+    color: var(--color-titulo);
+    font-weight: 500;
+    min-height: min-content;
+    padding: 7px 15px;
+    text-align: center;
+    justify-content: center;
+}
+.comboInputSugerencia .MuiAutocomplete-groupUl li:nth-child(even):hover { 
+    background-color: var(--background_verde2);
+}
+
+
+/* LABELS OPCIONES O SUGERENCIAS INPARES */
+.comboInputSugerencia .MuiAutocomplete-groupUl li:nth-child(odd) { 
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 19px;
+    background-color: var(--background-fondo-principal);
+    color: var(--color-titulo);
+    font-weight: 500;
+    min-height: min-content;
+    padding: 7px 12px;
+    text-align: center;
+    justify-content: center;
+}
+.comboInputSugerencia .MuiAutocomplete-groupUl li:nth-child(odd):hover { 
+    background-color: var(--background-fondo-principal);
+}
+
+
+/* OPCION O SUGERENCIA SELECCIONADA */
+.comboInputSugerencia .MuiAutocomplete-option[aria-selected="true"] {
+    background-color: var(--color-titulo) !important;
+    color: var(--color_texto_ligero_verde) !important;
+}

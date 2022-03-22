@@ -1,0 +1,271 @@
+
+/*================================
+Contenedor principal de la pagina
+==================================*/
+.paginaProducto.contenedorPagina {
+    align-items: center;
+    height: min-content;
+    min-height: 100%;
+    --relleno-carrusel: 35px;
+}
+
+/*===================================================
+Swiper Principal que contiene las secciones 
+=====================================================*/
+.paginaProducto .carruselPaginaProducto {
+    width: 100%;
+}
+
+
+/*===================================================
+/* div que contiene los botones:  1 -- 2 -- 3
+=====================================================*/
+.paginaProducto .divPaginacion {
+    padding: 18px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0px;
+}
+
+.paginaProducto .divPaginacion .botonSeccionProducto {
+    width: 36px;
+    min-width: min-content;
+    height: 36px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var( --background-fondo-tarjeta );
+    font-family: "Signika-Semibold" , "Segoe UI";
+    font-size: 19px;
+    color: var(--color-titulo);
+    border: 2px solid var(--color-titulo);
+    border-radius: 100%;
+}
+
+.paginaProducto .divPaginacion .botonSeccionActual {
+    background-color: var( --color-titulo );
+    color: var( --background-fondo-tarjeta );
+    border: 2px solid var(--color-titulo);
+}
+
+.paginaProducto .divPaginacion .linea {
+    width: 30px;
+    height: 10px;
+    background-color: var( --background-encabezado );
+    margin: 0px -4px 0px -4px;
+}
+
+
+/*=========================================================
+/* SwiperSlide (cada una de las 3 secciones)
+===========================================================*/
+.paginaProducto .divBotones {
+    width: 100%;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 22px 18px 27px 18px;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+
+
+
+/*=========================================================
+/* TIPOS DE BOTONES
+===========================================================*/
+.paginaProducto .botonVerde {
+    max-width: calc( 75% - 15px );
+    min-width: min-content;
+    flex-basis: calc( 50% - 15px );
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 20px;
+    text-transform: none;
+    background-color: var(--background-verde1) !important;
+    color: var(--color_texto_ligero_verde);
+    padding: 7px 18px;
+    border-radius: 10px;
+    flex-grow: 2;
+    line-height: 1.3;
+}
+
+.paginaProducto .botonAzul {
+    max-width: calc( 75% - 15px );
+    min-width: min-content;
+    flex-basis: calc( 50% - 15px );
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 20px;
+    text-transform: none;
+    background-color: var(--background_boton_azul) !important;
+    color: var(--background-fondo-principal);
+    padding: 7px 18px;
+    border-radius: 10px;
+    flex-grow: 2;
+    line-height: 1.3;
+}
+
+.paginaProducto .botonRojo {
+    max-width: calc( 75% - 15px );
+    min-width: min-content;
+    flex-basis: calc( 50% - 15px );
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 20px;
+    text-transform: none;
+    background-color: var(--background_boton_rojo) !important;
+    color: var(--color_texto_ligero_verde);
+    padding: 7px 18px;
+    border-radius: 10px;
+    flex-grow: 2;
+    line-height: 1.3;
+}
+
+
+
+/*======================================================
+    SwiperSlide (cada una de las 3 secciones)
+  ======================================================*/
+.paginaProducto .carruselPaginaProducto .itemSeccion {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 10px 18px;
+}
+
+
+
+/*======================================================
+            SwiperSlide (Seccion 1)
+  ======================================================*/
+
+/*_______________________________
+    CARRUSEL DE IMAGENES (swiper)
+_________________________________*/
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel {
+    width: 100%;
+    background-color: inherit;
+    padding: 0px;
+}
+
+/*_______________________________
+    BOTONES <-  -> del CARRUSEL 
+    DE IMAGENES (swiper)
+_________________________________*/
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .swiper-button-next, 
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .swiper-button-prev {
+    height: 100%;
+    background-color: rgba(21, 37, 22, 0.3);
+    top: 0px;
+    margin: 0px;
+    padding: 0px 16px;
+}
+
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .swiper-button-prev {
+    left: 0px;
+}
+
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .swiper-button-next {
+    right: 0px;
+}
+
+/* ICONO FLECHA */
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .swiper-button-next:after, 
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .swiper-button-prev:after {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--background-fondo-principal);
+}
+
+
+/*________________________
+    CONTENEDOR DE BOTONES
+__________________________*/
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .swiper-pagination {
+    bottom: calc( 0px );
+    height: calc( var(--relleno-carrusel) );
+    padding-top: 10px;
+    width: calc(100%);
+    background-color: var(--color-titulo);
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.oculto{
+    display: none;
+}
+
+/* BOTON CIRCULAR IMAGEN */
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .swiper-pagination .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    background-color: var(--background-fondo-tarjeta);
+    opacity: 1;
+}
+
+/* BOTON CIRCULAR IMAGEN ACTUAL */
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-item-imagen-seleccionado);
+}
+
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .itemCarrusel {
+    background-color: var(--background-fondo-principal);
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CUANDO ES IMAGEN */
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .itemCarrusel img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: scale-down;
+    padding: 0px 0px var(--relleno-carrusel) 0px !important;
+}
+
+/* CUANDO ES ICONO */
+.paginaProducto .carruselPaginaProducto .itemSeccion .carrusel .itemCarrusel .iconoImagen {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 15px 10px;
+    font-size: 60px;
+    color: var(--color-titulo);
+}
+
+
+
+.paginaProducto .inputNombre {
+    padding: 18px 0px 0px 0px;
+}
+
+.paginaProducto .inputNombre input {
+    text-align: center;
+}
+
+.paginaProducto .div_labelError {
+    width: 100%;
+    padding: 7px 6px 0px 6px;
+    font-family: 'Signika-Bold' , 'Segoe UI';
+    font-size: 17px;
+    text-align: justify;
+    color: var(--color_rojoOscuro);
+}
+
+.paginaProducto .div_labelError .icono {
+    font-size: inherit;
+    color: inherit;
+    float: left;
+    padding: 0px 5px 0px 0px;
+}

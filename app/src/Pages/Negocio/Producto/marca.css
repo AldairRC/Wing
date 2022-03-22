@@ -1,0 +1,43 @@
+
+/*===========================
+    CONTENEDOR DE LA MARCA
+=============================*/
+.divMarca {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    flex-wrap: nowrap;
+    overflow: auto;
+    width: 100%;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.divMarca img {
+    flex-shrink: 2;
+    max-width: 35%;
+    margin: 0px 4px 0px 0px;
+    min-height: 100%;
+    object-fit: scale-down;
+    border-radius: 5px;
+    border: 2px solid var(--color-titulo);
+}
+
+.divMarca .inputMarca {
+    flex-grow: 2;
+    min-width: min-content;
+}
+
+.divMarca .inputMarca input {
+    text-align: center;
+}
+
+.divMarca .iconoSelectorMarca {
+    border-radius: 7px;
+    font-size: 35px !important;
+    min-width: min-content;
+    background-color: var(--background-verde1) !important;
+    color: var(--color_texto_ligero_verde) !important;
+    margin-left: 5px;
+    padding: 3px 6px;
+}

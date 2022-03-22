@@ -1,0 +1,240 @@
+
+.labelTitulo {
+    width: 100%;
+    font-family: 'GermaniaOne-Regular' , 'Segoe UI';
+    font-size: 29px;
+    color: var(--color-titulo);
+    text-align: center;
+}
+
+.labelSubtitulo {
+    font-family: 'GermaniaOne-Regular' , 'Segoe UI';
+    font-size: 23px;
+    color: var(--color_texto_azul);
+    text-align: center;
+}
+
+.labelDato {
+    font-family: 'Signika-Semibold' , 'Segoe UI';
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-titulo);
+    padding: 7px 5px;
+}
+
+.divDatoResumen {
+    background-color: var(--background_input);
+    border: 2px solid var(--color-titulo);
+    border-radius: 7px;
+}
+
+
+/*================================
+    NOMBRE DEL PRODUCTO
+==================================*/
+.divNombreResumen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0px 0px 8px 0px;
+}
+
+.divNombreResumen .labelSubtitulo {
+    width: 100%;
+}
+
+.divNombreResumen .labelNombre {
+    width: 100%;
+}
+
+
+/*================================
+    CONTENEDOR DE LA MARCA
+==================================*/
+.divMarcaResumen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.divMarcaResumen .labelSubtitulo {
+    width: 100%;
+}
+
+.divMarcaResumen .divDato {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: stretch;
+}
+
+.divMarcaResumen .divDato img {
+    max-width: 32%;
+    object-fit: scale-down;
+    border-radius: 5px;
+    border: 1px solid var(--color-titulo);
+}
+
+.divMarcaResumen .divDato .labelMarca {
+    flex-grow: 2;
+    border-left: none;
+    border-radius: 0px 7px 7px 0px;
+    display: grid;
+    place-items: center;
+    margin: 5px 0px;
+}
+
+
+
+/*===========================================
+    CONTENEDOR DE LA DIMENSION Y EL PRECIO
+=============================================*/
+.divDimensionPrecioResumen {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    margin: 8px 0px 0px 0px;
+}
+
+/*============================
+    DIMENSION Y PRECIO
+==============================*/
+.divDimensionPrecioResumen .divDimensionResumen ,
+.divDimensionPrecioResumen .divPrecioResumen {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.divDimensionResumen .labelSubtitulo ,
+.divPrecioResumen .labelSubtitulo {
+    width: 100%;
+}
+
+.divDimensionPrecioResumen .divDimensionResumen .labelDimension {
+    width: 100%;
+}
+
+
+/*============================
+    PRECIO
+==============================*/
+.divDimensionPrecioResumen .divPrecioResumen .divDato {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.divDimensionPrecioResumen .divPrecioResumen .divDato .icono {
+    color: var( --color-titulo );
+    font-size: 23px;
+    padding: 7px 2px 6px 5px;
+}
+
+.divDimensionPrecioResumen .divPrecioResumen .divDato label {
+    width: 100%;
+}
+
+
+
+/*================================
+    CONTENEDOR DE LA CATEGORIA
+==================================*/
+.divCategoriaResumen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px 0px 0px 0px;
+}
+
+.divCategoriaResumen .labelSubtitulo {
+    width: 100%;
+}
+
+.divCategoriaResumen .divDato {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: stretch;
+}
+
+.divCategoriaResumen .divDato img {
+    max-width: 32%;
+    object-fit: scale-down;
+    border-radius: 5px;
+    border: 1px solid var(--color-titulo);
+}
+
+.divCategoriaResumen .divDato .labelCategoria {
+    flex-grow: 2;
+    border-left: none;
+    border-radius: 0px 7px 7px 0px;
+    display: grid;
+    place-items: center;
+    margin: 5px 0px;
+}
+
+
+
+/*============================
+    CODIGO DE BARRAS
+==============================*/
+.divCodigoDeBarrasResumen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px 0px 0px 0px;
+}
+
+.divCodigoDeBarrasResumen .labelSubtitulo {
+    width: 100%;
+}
+
+.divCodigoDeBarrasResumen .divDato {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.divCodigoDeBarrasResumen .divDato .icono {
+    color: var( --color-titulo );
+    font-size: 33px;
+    padding: 7px 2px 6px 5px;
+}
+
+.divCodigoDeBarrasResumen .divDato label {
+    width: 100%;
+}
+
+
+
+/*============================
+    DESCRIPCION
+==============================*/
+.divDescripcionResumen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px 0px 0px 0px;
+}
+
+.divDescripcionResumen .labelSubtitulo {
+    width: 100%;
+}
+
+.divDescripcionResumen .labelDescripcion {
+    width: 100%;
+    white-space: pre-wrap;
+}

@@ -1,0 +1,47 @@
+
+.modalCargando.MuiModal-root {
+    display: grid;
+    place-items: center;
+}
+
+.modalCargando .MuiBackdrop-root {
+    background-color: var(--background_modal);
+}
+
+.modalCargando .contenidoModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    outline: none;
+    margin: 10px 12px;
+}
+
+.modalCargando .contenidoModal img {
+    width: 140px;
+    object-fit: scale-down;
+    pointer-events: none;
+}
+ 
+@keyframes logo_animado {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .modalCargando .contenidoModal img {
+      animation: logo_animado infinite 1.25s linear;
+    }
+}
+
+.modalCargando .contenidoModal label {
+    font-family:  'Signika-Semibold' , 'Segoe UI';
+    font-size: 22px;
+    color: var(--color_texto_ligero_verde);
+    text-align: center;
+}

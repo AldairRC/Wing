@@ -1,0 +1,54 @@
+
+
+.modalImagen .MuiBackdrop-root {
+    background-color: var(--background_modal);
+}
+
+.modalImagen .contenidoModal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.modalImagen .contenidoModal .divHeader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 8px;
+    align-items: center;
+    background-color: var(--background_modalHeader);
+}
+
+.modalImagen .contenidoModal .divHeader .botonEliminar {
+    padding: 6px 10px;
+    font-family: 'Signika-SemiBold' , 'Segoe UI';
+    font-size: 20px;
+    text-transform: none;
+    background-color: var(--background_boton_rojo2);
+    color: var(--background-fondo-principal);
+    border-radius: 10px;
+}
+
+.modalImagen .contenidoModal .divHeader .iconoX {
+    min-width: min-content;
+    padding: 5px 10px;
+    font-size: 30px;
+    background-color: var(--background_boton_rojo2);
+    color: var(--background-fondo-principal);
+    border-radius: 8px;
+}
+
+.modalImagen .contenidoModal img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}

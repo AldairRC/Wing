@@ -1,0 +1,67 @@
+
+/*=======================================
+    CONTENEDOR DIMENSION (div)
+=========================================*/
+.divDimension {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+/*=======================================
+    CONTENEDOR DIMENSION (div)
+=========================================*/
+.divDimension .divContenido {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding: 7px 0px;
+}
+
+
+/*=======================================
+    ETIQUETA (.)
+=========================================*/
+.divDimension .labelPunto {
+    font-family: 'Segoe UI';
+    font-size: 35px;
+    font-weight: 800;
+    padding: 0px 8px;
+    color: var(--background-verde1);
+}
+
+/*=======================================
+    TEXT FIELD DIMENSION (PARTE ENTERA)
+=========================================*/
+.divDimension .inputDimension_PE {
+    flex-grow: 2;
+    flex-shrink: 2;
+    min-width: min-content;
+}
+
+.divDimension .inputDimension_PE input {
+    text-align: right !important;
+}
+
+
+/*=======================================
+    TEXT FIELD DIMENSION (PARTE DECIMAL)
+=========================================*/
+.inputDimension_PD {
+    width: fit-content;
+}
+
+
+/*=======================================
+    COMBO TIPO DE DIMENSION
+=========================================*/
+.comboDimension {
+    margin: 0px 0px 0px 6px;
+}

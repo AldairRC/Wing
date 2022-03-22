@@ -1,0 +1,113 @@
+ 
+.paginaCategorias {
+    align-items: center;
+    height: min-content;
+    min-height: 100%;
+}
+
+
+/*========================================
+    INDICADOR DE SUBCATEGORIAS
+==========================================*/
+.divIndicadorSubcategorias {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    line-height: 1 !important;
+    padding: 15px 5px 13px 5px;
+}
+ 
+.divIndicadorSubcategorias ol {
+    justify-content: center;
+    row-gap: 8px;
+}
+
+.divIndicadorSubcategorias .separador {
+    font-size: 25px;
+    color: var(--background-verde1);
+}
+
+.divIndicadorSubcategorias .itemSubcategoria {
+    font-family: 'Signika-SemiBold' , 'Segoe UI';
+    font-size: 20px;
+    color: var(--color-titulo);
+    text-transform: none;
+    line-height: 1;
+}
+
+.divIndicadorSubcategorias .itemSubcategoriaIcono {
+    font-size: 26px;
+    padding: 0px 5px;
+    color: var(--color-titulo);
+}
+
+.divIndicadorSubcategorias .itemSubcategoriaActual {
+    font-family: 'Signika-Bold' , 'Segoe UI';
+    font-size: 20px;
+    color: var(--color_rojoOscuro);
+}
+
+
+
+
+/*========================================
+    CONTENEDOR DE CATEGORIAS
+==========================================*/
+.paginaCategorias .contenedorTarjetasCategoria {
+    width: 100%;
+    columns: 2 auto;
+    padding: 14px 12px;
+    column-gap: 12px;
+}
+
+.paginaCategorias .contenedorTarjetasCategoria .tarjetaCategoria {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0px 12px 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid var(--background-tooltip);
+    background-color: var(--color-titulo);
+} 
+
+.paginaCategorias .contenedorTarjetasCategoria .tarjetaCategoria img {
+    width: calc( 100% + 1px );
+    object-fit: scale-down;
+}
+
+.paginaCategorias .contenedorTarjetasCategoria .tarjetaCategoria .iconoImagen {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 10px 4px;
+    font-size: 45px;
+    background-color: var(--background_input);
+    color: var(--color-titulo);
+}
+
+.paginaCategorias .contenedorTarjetasCategoria .tarjetaCategoria .labelCategoria {
+    width: 100%;
+    padding: 10px 6px 5px 6px;
+    text-align: center;
+    font-family: 'Signika-SemiBold' , 'Segoe UI';
+    font-size: 21px !important;
+    color: var(--color_texto_ligero_verde) !important;
+} 
+
+.paginaCategorias .contenedorTarjetasCategoria .tarjetaCategoria .botonSubcategorias {
+    width: 90%;
+    padding: 5px 6px;
+    text-align: center;
+    text-transform: none;
+    line-height: 1;
+    font-family: 'Signika-Bold' , 'Segoe UI';
+    font-size: 18px !important;
+    color: var(--color-titulo);
+    border-radius: 7px;
+    margin: 7px 0px 7px 0px;
+    padding: 10px 5px;
+    background-color: var(--color_texto_ligero_verde) !important;
+} 
+

@@ -1,0 +1,162 @@
+
+/*===========================
+    CONTENEDOR DE LA CATEGORIA
+=============================*/
+.divCategoria {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    flex-wrap: nowrap;
+    overflow: auto;
+    width: 100%;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.divCategoria img {
+    flex-shrink: 2;
+    max-width: 35%;
+    margin: 0px 4px 0px 0px;
+    min-height: 100%;
+    object-fit: scale-down;
+    border-radius: 5px;
+    border: 2px solid var(--color-titulo);
+}
+
+.divCategoria .inputCategoria {
+    flex-grow: 2;
+    min-width: min-content;
+}
+
+.divCategoria .inputCategoria input {
+    text-align: center;
+}
+
+.divCategoria .iconoSelectorCategoria {
+    border-radius: 7px;
+    font-size: 35px !important;
+    min-width: min-content;
+    background-color: var(--background-verde1) !important;
+    color: var(--color_texto_ligero_verde) !important;
+    margin-left: 5px;
+    padding: 3px 6px;
+}
+
+
+
+/*===========================
+    CODIGO DE BARRAS
+=============================*/
+.divCodigoDeBarras {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 10px 0px 0px 0px;
+}
+
+.divCodigoDeBarras .divContenido {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.divCodigoDeBarras .divIcono {
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+    color: var(--color-titulo);
+}
+
+.divCodigoDeBarras .inputCodigoDeBarras {
+    flex-grow: 2;
+    min-width: min-content;
+}
+
+.divCodigoDeBarras .inputCodigoDeBarras input {
+    text-align: center;
+}
+
+
+
+/*===========================
+    PRECIO
+=============================*/
+.divPrecio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 6px 0px;
+}
+
+.divPrecio .divContenido {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding: 16px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.divPrecio .divIcono {
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    margin: 0px 6px 0px 0px;
+    color: var(--color-titulo);
+}
+
+
+/*=======================================
+    ETIQUETA (.)
+=========================================*/
+.divPrecio .labelPunto {
+    font-family: 'Segoe UI';
+    font-size: 35px;
+    font-weight: 800;
+    padding: 0px 8px;
+    color: var(--background-verde1);
+}
+
+/*=======================================
+    TEXT FIELD PRECIO (PARTE ENTERA)
+=========================================*/
+.divPrecio .inputPrecio_PE {
+    flex-grow: 2;
+    flex-shrink: 2;
+    min-width: min-content;
+}
+
+.divPrecio .inputPrecio_PE input {
+    text-align: right !important;
+}
+
+
+/*=======================================
+    TEXT FIELD PRECIO (PARTE DECIMAL)
+=========================================*/
+.divPrecio .inputPrecio_PD {
+    width: fit-content;
+}
+
+
+
+
+/*===========================
+    DESCRIPCION
+=============================*/
+.inputDescripcion {
+    width: 100%;
+    min-width: min-content !important;
+    margin: 10px 0px 25px 0px !important;
+}

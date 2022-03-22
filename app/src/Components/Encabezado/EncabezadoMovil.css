@@ -1,0 +1,202 @@
+
+@font-face {
+    font-family: 'OleoScriptSwashCaps-Regular';
+    src: url('../../../public/RECURSOS/Fuentes/OleoScriptSwashCaps-Regular.ttf');
+}
+
+.ContenedorEncabezado {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: var(--background-encabezado);
+}
+ 
+.ContenedorEncabezado .titulo {
+    flex-grow: 2;
+    font-family:  'OleoScriptSwashCaps-Regular' , 'Segoe UI';
+    font-size: 25px;
+    color: var(--color-titulo);
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0px 8px;
+}
+
+.iconoMenu {
+    margin: 2px 0px 2px 1px !important; 
+    font-size: 30px !important;
+    padding: 10px 10px !important;
+    background-color: var(--background-tooltip) !important;
+    color: var(--background-encabezado) !important;
+    border-radius: 0% 26% 26% 0% !important;
+}
+
+.botonRegresar {
+    margin: 0px 4px 0px 4px !important; 
+    font-size: 30px !important;
+    padding: 10px 10px !important;
+    background-color: transparent !important;
+    color: var(--background-tooltip) !important;
+    border-radius: 100% !important;
+}
+
+.iconoOpciones {
+    margin: 2px 1px 2px 0px !important; 
+    font-size: 30px !important;
+    padding: 10px 13px !important;
+    background-color: var(--background-tooltip) !important;
+    color: var(--background-encabezado) !important;
+    border-radius: 26% 0% 0% 26% !important;
+}
+
+/* CONFIGURACION GENERAL DE LOS TOOLTIPS */
+.MuiTooltip-tooltip {
+    padding: 0px !important;
+    border-radius: 10px !important;
+    background-color: transparent;
+}
+
+/* ESTILO DE LA FLECHITA */
+.MuiTooltip-tooltip .div-TooltipTitulo ~.MuiTooltip-arrow {
+    color: var(--background-tooltip);
+}
+
+.MuiTooltip-tooltip .div-TooltipTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-tooltip);
+    padding: 10px 4px !important;
+    font-family: 'Segoe UI';
+    gap: 9px;
+    border-radius: 10px;
+}
+
+.MuiTooltip-tooltip .div-TooltipTitulo .titulo {
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--background-encabezado);
+}
+
+.MuiTooltip-tooltip .div-TooltipTitulo .descripcion {
+    font-family: 'Segoe UI';
+    font-size: 17px;
+    color: var(--background-fondo-principal);
+    text-align: center;
+    line-height: 110%;
+}
+
+
+/*===============================================================
+    DISEÑO DEL MENU PRINCIPAL
+=================================================================*/
+.menuLateralPrincipal .MuiDrawer-paper {
+    width: fit-content !important;
+    border-radius: 0% 12px 12px 0% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    max-width: 80% !important;
+}
+
+.menuLateralPrincipal .divMenu {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-tooltip);
+}
+
+/* BOTON ITEM */
+.menuLateralPrincipal .divMenu .item {
+    background-color: transparent;
+    color: var(--color-titulo);
+    padding: 12px 20px;
+    font-size: 25px;
+    color: var(--background-encabezado);
+    border-bottom: 1px solid gray;
+    border-radius: 0% !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuLateralPrincipal .divMenu .itemSeleccionado {
+    background-color: var(--color-titulo);
+}
+
+/* TEXTO DEL BOTON */
+.menuLateralPrincipal .divMenu .item label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: var(--background-encabezado);
+    margin: 0px 0px 0px 4px;
+    text-transform: none;
+    flex-grow: 2;
+    text-align: center;
+}
+
+
+
+
+/*===============================================================
+    DISEÑO DEL MENU OPCIONES
+=================================================================*/
+.menuLateralOpciones .MuiDrawer-paper {
+    height: fit-content !important;
+    border-radius: 0% 0% 12px 12px !important;
+    max-height: 60% !important;
+}
+
+.menuLateralOpciones .divMenu {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-tooltip);
+    border-radius: inherit;
+}
+
+.menuLateralOpciones .divMenu .item {
+    background-color: transparent;
+    color: var(--color-titulo);
+    padding: 12px 20px;
+    font-size: 25px;
+    color: var(--background-encabezado);
+    border-bottom: 1px solid gray;
+    border-radius: 0% !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuLateralOpciones .divMenu .itemSeleccionado {
+    background-color: var(--color-titulo);
+}
+
+.menuLateralOpciones .divMenu .item label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: var(--background-encabezado);
+    margin: 0px 0px 0px 4px;
+    text-transform: none;
+    flex-grow: 2;
+    text-align: center;
+}
+
+
+
+
+/*===============================================================
+    DISEÑO DEL BOTON DE CIERRE MANUAL DE LOS MENUS LATERALES
+=================================================================*/
+.iconoCerrarMenuLateral {
+    background-color: gray !important;
+    border-radius: 0px !important;
+    color: var(--background-tooltip) !important;
+    font-size: 30px !important;
+    padding: 8px 8px !important;
+}

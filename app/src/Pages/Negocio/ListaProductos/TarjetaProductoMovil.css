@@ -1,0 +1,247 @@
+
+
+
+.divTarjeta {
+    position: relative;
+    width: 100%;
+    border: 2px solid var(--color-titulo);
+    background-color: var(--background_input);
+    border-radius: 12px;
+    overflow: hidden;
+    --relleno-carrusel: 25px;
+}
+
+
+
+/*======================================================
+    ICONO DE IMAGEN
+  ======================================================*/
+.divTarjeta .iconoImagen {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 20px 10px;
+    font-size: 70px;
+    color: var(--color-titulo);
+}
+
+
+
+/*======================================================
+    CARRUSEL DE IMAGENES
+  ======================================================*/
+/* swiper */
+.divTarjeta .carrusel {
+    width: 100%;
+    background-color: inherit;
+    padding: 0px;
+}
+
+/* BOTONES DE ATRAS SIGUIENTE */
+.divTarjeta .carrusel .swiper-button-next, 
+.divTarjeta .carrusel .swiper-button-prev {
+    height: 100%;
+    background-color: rgba(21, 37, 22, 0.3);
+    top: 0px;
+    margin: 0px;
+    padding: 0px 16px;
+}
+
+.divTarjeta .carrusel .swiper-button-prev {
+    left: 0px;
+}
+
+.divTarjeta .carrusel .swiper-button-next {
+    right: 0px;
+}
+
+/* ICONO FLECHA */
+.divTarjeta .carrusel .swiper-button-next:after, 
+.divTarjeta .carrusel .swiper-button-prev:after {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--background-fondo-principal);
+}
+
+/* CONTENEDOR DE BOTONES */
+.divTarjeta .carrusel .swiper-pagination {
+    bottom: calc( 0px );
+    height: calc( var(--relleno-carrusel) + 8px );
+    padding-top: 10px;
+    width: calc(100% + 18px);
+    margin-left: -9px;
+    background-color: var(--color-titulo);
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 30px 30px 0% 0%;
+}
+
+/* BOTON CIRCULAR IMAGEN */
+.divTarjeta .carrusel .swiper-pagination .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    background-color: var(--background-fondo-tarjeta);
+    opacity: 1;
+}
+
+/* BOTON CIRCULAR IMAGEN ACTUAL */
+.divTarjeta .carrusel .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-item-imagen-seleccionado);
+}
+
+.divTarjeta .carrusel .itemCarrusel {
+    background-color: var(--background-fondo-principal);
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTarjeta .carrusel .itemCarrusel img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: scale-down;
+    padding: 0px 0px var(--relleno-carrusel) 0px !important;
+}
+
+
+
+
+/*======================================================
+    CONTENEDOR DE INFORMACION
+  ======================================================*/
+  .divTarjeta .contenedorInfo {
+    padding: 5px 7px 10px 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 15px;
+    background-color: var(--color-titulo);
+}
+
+/* CONTENEDOR DEL NOMBRE Y MARCA */
+.divTarjeta .contenedorInfo .divTexto1 {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.divTarjeta .contenedorInfo .divTexto1 .nombre {
+    font-family: "Signika-SemiBold" , "Segoe UI";   
+    font-size: 22px;
+    color: var(--color_texto_ligero_verde);
+    text-align: center;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box;  
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+
+.divTarjeta .contenedorInfo .divTexto1 .marca {
+    font-family: "Signika-SemiBold" , "Segoe UI";   
+    font-size: 19px;
+    color: var(--color_texto_amarillo);
+    text-align: center;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box;  
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:1;
+}
+
+/* CONTENEDOR DEL NOMBRE Y MARCA */
+.divTarjeta .contenedorInfo .divTexto2 {
+    min-width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.divTarjeta .contenedorInfo .divTexto2 .dimension {
+    font-family: "Signika-SemiBold" , "Segoe UI";   
+    font-size: 19px;
+    color: var(--color_texto_amarillo);
+    text-align: center;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box;  
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp: 1;
+}
+
+.divTarjeta .contenedorInfo .divTexto2 .botonVer {
+    font-family: "Signika-Bold";
+    font-size: 19px;
+    color: var(--color-titulo);
+    background-color: var(--color_texto_ligero_verde);
+    text-transform: none;
+    padding: 0px 10px !important;
+}
+
+
+
+
+
+/*======================================================
+    CONTENEDOR DE INFORMACION (EJEMPLO 2)
+  ======================================================*/
+.divTarjeta .contenedorInfo2 {
+    padding: 8px 9px 12px 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    background-color: var(--color-titulo);
+}
+
+/* CONTENEDOR DEL NOMBRE , MARCA y DIMENSION */
+.divTarjeta .contenedorInfo2 .divTexto {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.divTarjeta .contenedorInfo2 .divTexto .labelNombre {
+    font-family: "Signika-SemiBold" , "Segoe UI";   
+    font-size: 21px;
+    color: var(--background_input);
+    text-align: center;
+    padding: 0px 3px 0px 0px;
+}
+
+.divTarjeta .contenedorInfo2 .divTexto .labelMarca {
+    font-family: "Signika-SemiBold" , "Segoe UI";   
+    font-size: 21px;
+    color: var(--color_azulLigero);
+    text-align: center;
+    padding: 0px 3px 0px 0px;
+}
+
+.divTarjeta .contenedorInfo2 .divTexto .labelDimension {
+    font-family: "Signika-SemiBold" , "Segoe UI";   
+    font-size: 21px;
+    color: var(--background_input);
+    text-align: center;
+}
+
+.divTarjeta .contenedorInfo2 .botonVer {
+    font-family: "Signika-Bold";
+    font-size: 20px;
+    color: var(--color-titulo);
+    background-color: var(--color_texto_ligero_verde);
+    text-transform: none;
+    line-height: 1;
+    width: 95%;
+    padding: 8px 5px !important;
+}
+
+
+
+

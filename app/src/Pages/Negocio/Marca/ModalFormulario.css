@@ -1,0 +1,111 @@
+
+.modalMarcaFormulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.modalMarcaFormulario .MuiBackdrop-root {
+    background-color: var(--background_modal);
+}
+
+.modalMarcaFormulario .contenidoModal {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: none;
+    background-color: var(--background-fondo-principal);
+    border-radius: 8px;
+    padding: 5px 8px;
+}
+
+.modalMarcaFormulario .contenidoModal .divHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 4px 10px 4px;
+    align-items: center;
+    border-bottom: 1px solid var(--background-encabezado);
+}
+
+/*====================
+    BOTON OK
+======================*/
+.modalMarcaFormulario .contenidoModal .divHeader .botonOK {
+    padding: 4px 8px;
+    font-family: 'Signika-SemiBold' , 'Segoe UI';
+    font-size: 18px;
+    color: var(--color_texto_ligero_verde);
+    background-color: var(--background-verde1);
+    border-radius: 6px;
+    text-transform: none;
+}
+
+/*====================
+    ICONO X
+======================*/
+.modalMarcaFormulario .contenidoModal .divHeader .iconoX {
+    min-width: min-content;
+    padding: 5px 10px;
+    font-size: 28px;
+    background-color: var(--background_boton_rojo2);
+    color: var(--background-fondo-principal);
+    border-radius: 8px;
+}
+
+
+/*====================
+    INPUT NOMBRE
+======================*/
+.modalMarcaFormulario .inputNombre {
+    width: 100%;
+    margin: 30px 5px 30px 5px;
+}
+
+
+.modalMarcaFormulario .divBotonesImagenMarca {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0px 12px 0px;
+}
+
+
+.modalMarcaFormulario .divBotonesImagenMarca .botonVerde {
+    width: 70%;
+    padding: 4px 8px;
+    font-family: 'Signika-SemiBold' , 'Segoe UI';
+    font-size: 18px;
+    color: var(--color_texto_ligero_verde);
+    background-color: var(--background-verde1);
+    border-radius: 6px;
+    text-transform: none;
+}
+
+.modalMarcaFormulario .divBotonesImagenMarca .botonRojo {
+    width: 70%;
+    padding: 4px 8px;
+    font-family: 'Signika-SemiBold' , 'Segoe UI';
+    font-size: 18px;
+    color: var(--color_texto_ligero_verde);
+    background-color: var(--background_boton_rojo);
+    border-radius: 6px;
+    text-transform: none;
+}
+
+
+
+/*====================
+    IMAGEN MARCA
+======================*/
+.modalMarcaFormulario .contenidoModal img {
+    width: 100%;
+    object-fit: scale-down;
+}
